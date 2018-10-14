@@ -1,0 +1,138 @@
+footer, header {
+  background: #090f0d;
+  background: url("../img/tile.png");
+  background-size: cover;
+  position: relative; }
+
+footer {
+  background-size: contain;
+  color: #bebebe;
+  padding: 0.5em;
+  text-align: center; }
+  footer p {
+    position: relative;
+    z-index: 999; }
+
+html, body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+header {
+  background: #090f0d;
+  background: url("../img/tile.png");
+  background-size: cover;
+  min-height: 100vh;
+  position: relative; }
+  header main {
+    z-index: 999; }
+    header main .title {
+      font-size: 4em;
+      margin-bottom: 0.25em; }
+    header main .subtitle {
+      color: #fcffff;
+      font-size: 3em;
+      margin-bottom: 0.5em; }
+
+main {
+  padding: 10em 0;
+  text-align: center; }
+  main .button {
+    display: none;
+    font-size: 1.1em; }
+
+section {
+  background: #fcffff;
+  color: #84592c;
+  padding: 1em; }
+  section.coral {
+    background: url("../img/coral_tall.png");
+    background-size: contain; }
+    section.coral:not(.dark) {
+      box-shadow: 0 0 50px rgba(227, 211, 198, 0.2);
+      position: relative;
+      z-index: 999; }
+    section.coral.dark {
+      background: url("../img/coral_dark.png");
+      background-size: contain;
+      box-shadow: 0 0 50px rgba(78, 156, 178, 0.2);
+      color: #f1f1f1; }
+      section.coral.dark .title {
+        color: #4e9cb2;
+        text-shadow: none; }
+    section.coral .content {
+      display: flex;
+      flex-direction: row; }
+      section.coral .content img {
+        margin-right: 1em; }
+    section.coral .title {
+      margin-bottom: 0.5em; }
+
+.album-cover {
+  height: 10em;
+  width: auto; }
+
+.button {
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 10px rgba(252, 255, 255, 0.11);
+  color: #fcffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase; }
+  .button:hover {
+    box-shadow: 0 5px 30px rgba(252, 255, 255, 0.11); }
+  .button.gold {
+    background: linear-gradient(90deg, #84592c, #8d7559); }
+
+.overlay {
+  background-color: rgba(9, 15, 13, 0.9);
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+.purchase .content {
+  color: #bc574f;
+  font-size: 5em;
+  padding: 0.5em;
+  text-align: center; }
+  .purchase .content .fa {
+    cursor: pointer;
+    flex: 1; }
+    .purchase .content .fa:hover {
+      color: #ca7a74; }
+
+.title {
+  color: #84592c;
+  font-size: 2em;
+  text-shadow: 1px 1px #fcffff;
+  text-transform: uppercase; }
+
+.tracks {
+  flex: 1;
+  list-style-type: bullet;
+  padding-left: 1em; }
+  .tracks li {
+    color: #4e9cb2;
+    font-style: italic;
+    text-shadow: 1px 1px rgba(252, 255, 255, 0.1);
+    text-transform: uppercase; }
+
+.subtitle {
+  color: #4e9cb2;
+  font-size: 1.2em;
+  font-style: italic; }
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-wrap: wrap; } }
+
+/*# sourceMappingURL=main.css.map */

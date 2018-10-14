@@ -1,0 +1,159 @@
+@import ./variables.sass
+
+footer, header
+    background: $black
+    background: url("../img/tile.png")
+    background-size: cover
+    position: relative
+
+footer
+    background-size: contain
+    color: darken(#f1f1f1, 20)
+    padding: 0.5em
+    text-align: center
+    p
+        position: relative
+        z-index: 999
+
+html, body
+    font-family: sans-serif
+    height: 100%
+    margin: 0
+    padding: 0
+
+header
+    background: $black
+    background: url("../img/tile.png")
+    background-size: cover
+    min-height: 100vh
+    position: relative
+    main
+        z-index: 999
+
+        .title
+            font-size: 4em
+            margin-bottom: 0.25em
+
+        .subtitle
+            color: $white
+            font-size: 3em
+            margin-bottom: 0.5em
+
+main
+    padding: 10em 0
+    text-align: center
+
+    .button
+        display: none
+        font-size: 1.1em
+
+section
+    background: $white
+    color: $brown
+    padding: 1em
+
+    &.coral
+        background: url("../img/coral_tall.png")
+        background-size: contain
+
+        &:not(.dark)
+            box-shadow: 0 0 50px rgba($pink, 0.2)
+            position: relative
+            z-index: 999
+
+        &.dark
+            background: url("../img/coral_dark.png")
+            background-size: contain
+            box-shadow: 0 0 50px rgba($blue, 0.2)
+            color: #f1f1f1
+
+            .title
+                color: $blue
+                text-shadow: none
+
+        .content
+            display: flex
+            flex-direction: row
+
+            img
+                margin-right: 1em
+
+        .title
+            margin-bottom: 0.5em
+
+.album-cover
+    height: 10em
+    width: auto
+
+.button
+    border-radius: 0.25rem
+
+    //box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08)
+    box-shadow: 0 5px 10px rgba($white, 0.11)
+    color: $white
+    cursor: pointer
+    display: inline-block
+    font-size: 0.8em
+    letter-spacing: 0.05em
+    padding: 1em
+    text-align: center
+    text-transform: uppercase
+
+    &:hover
+        box-shadow: 0 5px 30px rgba($white, 0.11)
+
+    &.gold
+        //background: linear-gradient(90deg, darken($gold, 10), lighten($gold, 10))
+        background: linear-gradient(90deg, $brown, $gold)
+
+        //&:hover
+        //    background: $gold
+        //background: #396afc
+        //background: -webkit-gradient(linear,left top,right top,from(#2948ff),to(#396afc))
+        //background: linear-gradient(90deg,#2948ff,#396afc)
+
+.overlay
+    background-color: rgba($black, 0.9)
+    position: absolute
+    height: 100%
+    overflow: hidden
+    width: 100%
+    top: 0
+    left: 0
+    z-index: 1
+
+.purchase .content
+    color: $hotPink
+    font-size: 5em
+    padding: 0.5em
+    text-align: center
+    .fa
+        cursor: pointer
+        flex: 1
+        &:hover
+            color: lighten($hotPink, 10)
+
+.title
+    color: $brown
+    font-size: 2em
+    text-shadow: 1px 1px $white
+    text-transform: uppercase
+
+.tracks
+    flex: 1
+    list-style-type: bullet
+    padding-left: 1em
+    li
+        color: $blue
+        font-style: italic
+        text-shadow: 1px 1px rgba(#fcffff, 0.1)
+        text-transform: uppercase
+
+.subtitle
+    color: $blue
+    font-size: 1.2em
+    font-style: italic
+
+@media screen and (max-width: 768px)
+    .content
+        flex-wrap: wrap
